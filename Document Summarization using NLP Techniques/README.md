@@ -5,7 +5,7 @@ Executing the project locally
 1.	Install Java 8 and set all the path variables
 2.	Install python 3.8 and set all the path variables
 3.	Install Spark and set all the path variables
-4.	Run the given python file
+4.	Run the given **Summarization.py** python file
 In case the above method did not work out it might be due to the library version incompatibilities. Please use databricks notebook to execute the code.
 
 Follow these steps to run the project on databricks.
@@ -34,11 +34,12 @@ Follow these steps to run the project in AWS notebook cluster:
 
 1.	Login to AWS and create a notebook cluster using the same steps to create a AWS cluster. Ensure that the spark option is enabled while creating the cluster.
 2.	Once the cluster is started, click on the option open in Jupyter. This opens a notebook in jupyter.
-3.	In the Jupyter notebook import the attached notebook Summarization.pynb file.
+3.	In the Jupyter notebook import the attached notebook **Summarization.pynb** file.
 4.	After importing run all the cells in the notebook. This will take approximately 30-40 minutes to completely run. 
 5.	Since the data is parsed from many URL’s of the dataset, it takes time to parse each URL and save the retrieved data into a dataframe. This dataframe along with the retrieved data and their respective reference summary is saved in AWS S3 bucket. This can be retrieved or used later.
 6.	The output dataframe with the generated summary and the reference summary is also saved in the AWS S3 bucket. Code is written for saving these files.
-7.	The analysis dataframe with the Precision, Recall and F-Statistics is also saved in the AWS S3 bucket. 
-
+7.	Rouge is the evaluation metric used in the document summarization used in comparing and analyzing the different models. The analysis dataframe with the Precision, Recall and F-Statistics is also saved in the AWS S3 bucket. 
+8. 	The respective plots have been plotted using bar graphs and line graphs to represent the effectiveness of the each model from Model 1 to Model 5 which varies based on the summary based by increasing the number of sentences from 1 to 9 with a step of 2.
+9.	From this we conclude that model 3 with 5 sentences for the generated summary provides high accuracy and similar to the reference summary.
 
 
