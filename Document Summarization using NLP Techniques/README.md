@@ -6,7 +6,7 @@ The news_summary.csv file contains 6 columns from which we considered URL and te
 
 The news_summary_more.csv file contains only 2 columns headlines and text which can be used for headlines extraction.
 
-**How to run the Project **
+**How to run the Project**
 
 **Executing the project locally**
 
