@@ -1,7 +1,7 @@
 # Key in your AWS credentials here
-myAWSsecret="8g010QeXxxIzzpP/40erBzzVfE0+4+DFAXHAj0Ym"
-myAWSkey="AKIAT6DBARJD4EIHOUEU"
-bucket = "bigdata-project-text"
+myAWSsecret = "your AWS Secret key"
+myAWSkey= "your aws key"
+bucket = "S3 Bucket name"
 
 from pyspark.sql import SparkSession
 from pyspark import SparkConf, SparkContext
