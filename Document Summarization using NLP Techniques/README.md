@@ -1,6 +1,9 @@
 **Dataset**
+
 The dataset is obtained from the Kaggle News Summary Dataset : https://www.kaggle.com/sunnysai12345/news-summary
+
 The news_summary.csv file contains 6 columns from which we considered URL and text(reference summary), ctext is the complete text extracted from the URL but since it has many null values we decided to parse from the URL.
+
 The news_summary_more.csv file contains only 2 columns headlines and text which can be used for headlines extraction.
 
 **How to run the Project **
