@@ -1,6 +1,11 @@
-How to run the Project 
+**Dataset**
+The dataset is obtained from the Kaggle News Summary Dataset : https://www.kaggle.com/sunnysai12345/news-summary
+The news_summary.csv file contains 6 columns from which we considered URL and text(reference summary), ctext is the complete text extracted from the URL but since it has many null values we decided to parse from the URL.
+The news_summary_more.csv file contains only 2 columns headlines and text which can be used for headlines extraction.
 
-Executing the project locally
+**How to run the Project **
+
+**Executing the project locally**
 
 1.	Install Java 8 and set all the path variables
 2.	Install python 3.8 and set all the path variables
@@ -8,7 +13,7 @@ Executing the project locally
 4.	Run the given **Summarization.py** python file
 In case the above method did not work out it might be due to the library version incompatibilities. Please use databricks notebook to execute the code.
 
-Follow these steps to run the project on databricks.
+**Follow these steps to run the project on databricks**
 
 1. Login to databricks.com 
 2. Create a cluster with the following python libraries(PyPi) installed on the cluster:
@@ -30,7 +35,7 @@ Files will be automatically downloaded once the URL is pasted in the browser and
 
 ** Note : please allow atleast 30-35 minutes for all the commands to execute as the data file is large.
 
-Follow these steps to run the project in AWS notebook cluster:
+**Follow these steps to run the project in AWS notebook cluster**
 
 1.	Login to AWS and create a notebook cluster using the same steps to create a AWS cluster. Ensure that the spark option is enabled while creating the cluster.
 2.	Once the cluster is started, click on the option open in Jupyter. This opens a notebook in jupyter.
