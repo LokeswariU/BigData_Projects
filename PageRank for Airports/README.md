@@ -17,7 +17,7 @@
 2) If Scala Project is not available download the plugin for scala in IntelliJ IDEA.
 3) Create a new Scala class in the Project folder -> src folder ->main folder ->scala folder in IntelliJ.
 4) Download the PageRank.scala file. Copy the file content in the newly created scala class.
-5) In the Project folder -> target -> build.sbt is previously generated. Copy paste the contents of the build.sbt file from the zip folder or paste the .scala file directly in the (Project)main folder in the local computer location.
+5) In the Project folder -> target -> build.sbt is previously generated. Copy paste the contents of the build.sbt file or paste the .scala file directly in the (Project)main folder in the local computer location.
 6) Run the scala class created in the IntelliJ.
 7) Then Goto View tab -> Tool Windows -> click sbt.
 8) In the Sbt panel opened in the right of the window, Goto PageRank -> sbt tasks -> click on Package.
