@@ -1,5 +1,6 @@
 **WordCount for Named Entities** - Taken a large text file dataset from the Gutenberg Website and find their named entities and their count for each word. From the output we can retrieve the top frequently occurring words.
-**Search Engine for Movie Plot Summaries** - Taken a large movie plot summary dataset from the Carnegie Movie Summary Corpus site. Using TF-IDF and Cosine Similarity to search the most relevant movies related to the search terms like movie name or movie genre.
+
+**Search Engine for Movie Plot Summaries** - Taken a large movie plot summary dataset from the Carnegie Movie Summary Corpus site. Using TF-IDF for single search terms and Cosine Similarity for multiple search terms to search the most relevant movies related to the search terms like movie name or movie genre. 
 
 
 You will use the tf-idf technique studied in class to accomplish the above task. For more details on
@@ -27,7 +28,7 @@ https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93e
 1. Login to databricks.com 
 2. Create a new notebook by selecting import notebook from URL =>
 https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/4118661854845849/1934211613559818/8152562404163685/latest.html
-3. Download the Movies Plot summary available in the Carnegie Movie Summary Corpus site http://www.cs.cmu.edu/~ark/personas/data/MovieSummaries.tar.gz
+3. Download the Movies Plot summary available in the Carnegie Movie Summary Corpus site http://www.cs.cmu.edu/~ark/personas/data/MovieSummaries.tar.gz and use the plot_summaries.txt from the .tar file.
 4. Remove all the stopwords using stopwords.txt file, convert to lowercase and split the document to individual words using mapreduce function and clean the data without null values.
 5. Give some search terms like movie names or movie genre to be searched in a text file and pass as input.
 6. Written a function for cosine similarity and TF-IDF to find the document and word similarity.
