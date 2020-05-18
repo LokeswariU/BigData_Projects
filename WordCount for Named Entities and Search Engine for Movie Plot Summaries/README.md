@@ -23,4 +23,3 @@ https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93e
 5. Give some search terms like movie names or movie genre to be searched in a text file and pass as input.
 6. Written a function for cosine similarity and TF-IDF to find the document and word similarity.
 7. If the search term is greater than one, cosine similarity is used and if the search term is less than one TF-IDF is used to find the Document-Term similarity and retrieve the most frequent movies related to those search terms.
-5. 
