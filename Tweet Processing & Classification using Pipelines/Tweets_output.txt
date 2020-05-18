@@ -1,0 +1,29 @@
+
+ Metrics for Logistic Regression 
+
+ Accuracy = 0.7127878996218632
+ Weighted Precision = 0.6924381926847817
+ Weighted Recall = 0.7127878996218632
+ Weighted Fmeasure = 0.6853545504496524
+ Confusion Matrix : 
+3310.0  205.0  86.0   
+767.0   388.0  110.0  
+396.0   107.0  449.0  
+ Weighted TruePositive = 0.7127878996218632
+ Weighted FalsePositive = 0.34617640590227505
+ Label wise Data
+	 Label :0.0
+ TruePositive = 0.9191891141349625
+ FalsePositive = 0.5245827695083446
+ Precision = 0.7399955287279231
+ Recall = 0.9191891141349625
+	 Label :1.0
+ TruePositive = 0.3067193675889328
+ FalsePositive = 0.06852624643092467
+ Precision = 0.5542857142857143
+ Recall = 0.3067193675889328
+	 Label :2.0
+ TruePositive = 0.47163865546218486
+ FalsePositive = 0.04027949034114262
+ Precision = 0.6961240310077519
+ Recall = 0.47163865546218486
