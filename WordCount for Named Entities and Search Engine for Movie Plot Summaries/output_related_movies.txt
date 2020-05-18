@@ -1,0 +1,38 @@
+action
+Top 10 relavent Movies based on user search: 
+Crayon Shin-chan: Action Kamen vs Leotard Devil
+Action Man: Robot Atak
+Crayon Shin-chan: The Storm Called The Jungle
+Smallpox
+Bombaat
+Rosencrantz & Guildenstern Are Dead
+West Side Story
+Crayon Shin-chan: The Storm Called: Operation Golden Spy
+Direct Action
+Jingle All the Way
+
+thriller
+Top 10 relavent Movies based on user search: 
+Kyun Tum Say Itna Pyar Hai
+Man In The Mirror: The Michael Jackson Story
+Godfather
+Red: The Dark Side
+Caravan
+Out for a Kill
+The Dark Mirror
+Dhuaan
+The Spider
+Betrayed
+
+Michael Jackson
+Top 10 relavent Movies based on user search: 
+Above the Law
+Chronos
+Coquette
+Anaconda 4: Trail of Blood
+Before Women Had Wings
+Betrayed
+The Bank Job
+All My Friends Are Leaving Brisbane
+Shakedown
+Harlem Nights
