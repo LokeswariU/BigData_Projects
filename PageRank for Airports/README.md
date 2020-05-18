@@ -1,9 +1,13 @@
 **PageRank for Airports**
 
 *The PageRank algorithm is written in PageRank.scala file.*
+
 *The appropriate Jar file is generated for the PageRank.scala file using IntelliJ and the Input file – Airports.csv.*
+
 *The Jar file along with the input file ( Airports.csv) should uploaded in the AWS S3 bucket.*
+
 *Follow the steps to implement the PageRank Algorithm in the AWS cluster.*
+
 *The output from the AWS cluster is also available as Airports_Rank.csv.*
 
 
