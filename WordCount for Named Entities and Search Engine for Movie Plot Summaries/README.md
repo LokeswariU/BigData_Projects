@@ -1,4 +1,13 @@
-1.**WordCount for Named Entities** - Taken a large text file dataset from the Gutenberg Website and find their named entities and their count for each word. From the output we can retrieve the top frequently occurring words.
+**WordCount for Named Entities** - Taken a large text file dataset from the Gutenberg Website and find their named entities and their count for each word. From the output we can retrieve the top frequently occurring words.
+**Search Engine for Movie Plot Summaries** - Taken a large movie plot summary dataset from the Carnegie Movie Summary Corpus site. Using TF-IDF and Cosine Similarity to search the most relevant movies related to the search terms like movie name or movie genre.
+
+
+You will use the tf-idf technique studied in class to accomplish the above task. For more details on
+how to compute tf-idf using MapReduce, see the links below:
+1. IR using MapReduce
+2. Good introduction from Coursera Distributed Programming course
+3. Chapter 4 of the reference book Data-Intensive Text Processing using MapReduce.
+This assignment has to be done using Scala/PySpark code that can run on a Databricks cluster.
 
 
 **WordCount for Named Entities**
