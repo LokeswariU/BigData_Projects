@@ -53,16 +53,25 @@ Execution: Run the following commands in the command prompt using Apache Spark a
 > ***logstash -f logstash-simple.conf***
 
 14. Save the following command in the logstash-simple.conf file in the bin folder before running the command in the command prompt.
-> ***```
-input { 
+***```
+input {
+
 kafka { 
+
 bootstrap_servers => "localhost:9092" 
+
 topics => ["YourTopic"] 
+
 } } 
+
 output { 
+
 elasticsearch { 
+
 hosts => ["localhost:9200"] 
+
 index => "YourTopic-index" 
+
 } }```***
  
 15.	After starting Elastic Search and Kibana got to this link address . *http://localhost:5601/*
