@@ -24,50 +24,53 @@
 4. The project folder kafka which is run using IntelliJ is also  zipped and attached in the Assignment3 zip folder.
 Execution: Run the following commands in the command prompt using Apache Spark and Kafka. Kafka – 2.12-2.5.0 version and Spark – 2.4.5 version.
 5. Start and Run Zookeeper in the command prompt in Kafka path   -    
-***.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties***
+> ***.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties***
  
 6. Start and Run Kafka in a new command prompt-
-***.\bin\windows\kafka-server-start.bat .\config\server.properties***
+> ***.\bin\windows\kafka-server-start.bat .\config\server.properties***
 
 7. Create Topic in Zookeeper in a new command prompt-
-***.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic kafkaTopic***
+> ***.\bin\windows\kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic kafkaTopic***
 
 8. Start Producer using kafkaTopic	-
-***.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic kafkaTopic***
+> ***.\bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic kafkaTopic***
 
 9. Start Consumer in a new Command prompt –
-***.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic kafkaTopic --from-beginning***
+> ***.\bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic kafkaTopic --from-beginning***
  
 10. Open a new Command prompt go to spark bin file path-
-***spark-submit --class TwitterKafka  Path_to_jar_file\kafka-assembly-0.1.jar “lockdown” kafkaTopic***
+> ***spark-submit --class TwitterKafka  Path_to_jar_file\kafka-assembly-0.1.jar “lockdown” kafkaTopic***
 
 11.	This will output the sentiments for each twitter in the consumer command prompt.
+
 12. Open a new command prompt goto Elasticsearch bin file path –
-***.\elasticsearch***
+> ***.\elasticsearch***
 
 12.	Open a new command prompt goto Kibana bin file path –
-***.\kibana***
+> ***.\kibana***
 
 13. Open a new command prompt goto logstash bin file path –
-***logstash -f logstash-simple.conf***
+> ***logstash -f logstash-simple.conf***
 
 14. Save the following command in the logstash-simple.conf file in the bin folder before running the command in the command prompt.
-***```
-input { 
-kafka { 
-bootstrap_servers => "localhost:9092" 
-topics => ["YourTopic"] 
-} } 
-output { 
-elasticsearch { 
-hosts => ["localhost:9200"] 
-index => "YourTopic-index" 
-} }```***
+> ***```
+> input { 
+> kafka { 
+> bootstrap_servers => "localhost:9092" 
+> topics => ["YourTopic"] 
+> } } 
+> output { 
+> elasticsearch { 
+> hosts => ["localhost:9200"] 
+> index => "YourTopic-index" 
+> } }```***
  
 15.	After starting Elastic Search and Kibana got to this link address . *[http://localhost:5601/]*
+
 16.	In the visualization of the graphs, give the Time duration for fetching the tweets and running the project. This gives a graph of sentiments for each tweets in the time duration given as input.
 
 **Input and Output Public paths:**
+
 - The jar file has been uploaded to the S3 bucket in AWS and make as a public path:
 *[https://assignment-3-bigdata.s3.amazonaws.com/kafka-assembly-0.1.jar]*
 
