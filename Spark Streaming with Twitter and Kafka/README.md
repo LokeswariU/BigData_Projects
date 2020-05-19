@@ -1,7 +1,7 @@
 **Dataset:**
-1.	Create a Twitter account. Create a developer account in Twitter. 
-2.	Create an App in Twitter developer account and set up an dev environment to retrieve the tweets. 
-3.	Use the Access key, Secret key, Token Access key and Token Secret key to retrieve the tweets using TwitterUtils.createStream() function.
+-	Create a Twitter account. Create a developer account in Twitter. 
+- Create an App in Twitter developer account and set up an dev environment to retrieve the tweets. 
+-	Use the Access key, Secret key, Token Access key and Token Secret key to retrieve the tweets using TwitterUtils.createStream() function.
 
 **Steps to Implement**
 1. Download Kafka, Apache_spark, ElasticSearch, Kibana and Logstash.
@@ -14,7 +14,7 @@
 8. Visualize the graph based on the particular time period by giving the time period and the interval. Start the graph, this will output the sentiment of the each tweet analysed in that particular time limit e.g. 2 hours.
 9.  Check the sample graph in the word Document.
 10. The Jar file is uploaded in the S3 bucket in AWS and made public to get the URL.
-"https://assignment-3-bigdata.s3.amazonaws.com/kafka-assembly-0.1.jar". The kafka.zip is the project folder without the jar file which is run using IntelliJ.
+"[https://assignment-3-bigdata.s3.amazonaws.com/kafka-assembly-0.1.jar]". The kafka.zip is the project folder without the jar file which is run using IntelliJ.
 
 
 **Implementation:**
@@ -50,27 +50,39 @@ Execution: Run the following commands in the command prompt using Apache Spark a
 
 13. Open a new command prompt goto logstash bin file path –
 ***logstash -f logstash-simple.conf***
+
 14. Save the following command in the logstash-simple.conf file in the bin folder before running the command in the command prompt.
-***input { 
+***
+input { 
+
 kafka { 
+
 bootstrap_servers => "localhost:9092" 
+
 topics => ["YourTopic"] 
+
 } } 
+
 output { 
+
 elasticsearch { 
+
 hosts => ["localhost:9200"] 
+
 index => "YourTopic-index" 
+
 } }***
  
-15.	After starting Elastic Search and Kibana got to this link address . http://localhost:5601/
+15.	After starting Elastic Search and Kibana got to this link address . *[http://localhost:5601/]*
 16.	In the visualization of the graphs, give the Time duration for fetching the tweets and running the project. This gives a graph of sentiments for each tweets in the time duration given as input.
 
 **Input and Output Public paths:**
-1. The jar file has been uploaded to the S3 bucket in AWS and make as a public path:
-*https://assignment-3-bigdata.s3.amazonaws.com/kafka-assembly-0.1.jar*
+- The jar file has been uploaded to the S3 bucket in AWS and make as a public path:
+*[https://assignment-3-bigdata.s3.amazonaws.com/kafka-assembly-0.1.jar]*
 
-2. Use this link in the Kibana to visualize the Graph of sentiments in three categories -Positive, Negative and Neutral and with filter of 2 hours of implementation: *http://localhost:5601/app/timelion#?_g=(refreshInterval:(pause:!t,value:0),time:(from:now-2h,to:now))&_a=(columns:2,interval:'1m',rows:2,selected:0,sheet:!('.es(q%3D!'message.keyword:NEGATIVE!').label(!'Negative!'),%0A.es(q%3D!'message.keyword:POSITIVE!').label(!'Positive!'),%0A.es(q%3D!'message.keyword:NEUTRAL!').label(!'Neutral!')'))*
-3. After visualization, the graph displayed will be of this 
+- Use this link in the Kibana to visualize the Graph of sentiments in three categories -Positive, Negative and Neutral and with filter of 2 hours of implementation: *[http://localhost:5601/app/timelion#?_g=(refreshInterval:(pause:!t,value:0),time:(from:now-2h,to:now))&_a=(columns:2,interval:'1m',rows:2,selected:0,sheet:!('.es(q%3D!'message.keyword:NEGATIVE!').label(!'Negative!'),%0A.es(q%3D!'message.keyword:POSITIVE!').label(!'Positive!'),%0A.es(q%3D!'message.keyword:NEUTRAL!').label(!'Neutral!')'))]*
+- After visualization, the graph displayed will be of this 
+
  
 **Summary:**
 1. The sentiments retrieved while analyzing the “lockdown” tweets has more negative emotions. People have expressed more negative sentiments in their tweets retrieved with a timespan of 1 hour which related to lockdown.
