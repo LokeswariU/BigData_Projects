@@ -84,7 +84,7 @@ Execution: Run the following commands in the command prompt using Apache Spark a
 
 - Use this link in the Kibana to visualize the Graph of sentiments in three categories -Positive, Negative and Neutral and with filter of 2 hours of implementation: *http://localhost:5601/app/timelion#?_g=(refreshInterval:(pause:!t,value:0),time:(from:now-2h,to:now))&_a=(columns:2,interval:'1m',rows:2,selected:0,sheet:!('.es(q%3D!'message.keyword:NEGATIVE!').label(!'Negative!'),%0A.es(q%3D!'message.keyword:POSITIVE!').label(!'Positive!'),%0A.es(q%3D!'message.keyword:NEUTRAL!').label(!'Neutral!')'))*
 - After visualization, the graph displayed will be of this 
-
+![](https://github.com/LokeswariU/BigData_Projects/blob/master/Spark%20Streaming%20with%20Twitter%20and%20Kafka/Output.png)
  
 **Summary:**
 1. The sentiments retrieved while analyzing the “lockdown” tweets has more negative emotions. People have expressed more negative sentiments in their tweets retrieved with a timespan of 1 hour which related to lockdown.
